@@ -6,8 +6,8 @@
   </head>
   <body class="index-page">
     <header class="main-header">
-      <a href="index.html" class="main-header__logo-link">
-        <img src="http://placehold.it/371x155" class="main-header__logo" width="371" height="155">
+      <a class="main-header__logo-link">
+        <img src="img/index-logo.png" class="main-header__logo" width="371" height="155" alt="Барбершоп">
       </a>
       <nav class="main-nav__list">
         <ul class="main-nav">
@@ -18,7 +18,7 @@
             <a href="#" class="main-nav__link">НОВОСТИ</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">ПРАЙС-ЛИСТ</a>
+            <a href="price-list.html" class="main-nav__link">ПРАЙС-ЛИСТ</a>
           </li>
           <li class="main-nav__item">
             <a href="catalog.html" class="main-nav__link">МАГАЗИН</a>
@@ -71,7 +71,7 @@
           </li>
           <li class="news__item">
             <p>
-              В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД
+              В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДАТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД
               ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ
             </p>
             <time datetime="01-18">18 января</time>
@@ -83,14 +83,14 @@
         <h2 class="photos__heading">ФОТОГАЛЕРЕЯ</h2>
         <div class="slider">
           <div class="slider__viewport">
-            <ul class="slider__slid-holder">
-              <li class="slider__item">
-                <img src="http://placehold.it/286x164" class="slider__slid" width="286" height="164">
-              </li>
-            </ul>
+            <div class="slider__slid-holder">
+              <a href="#" class="slider__frame">
+                <img src="img/photo-1.jpg" class="slider__slid" width="286" height="164" alt="Интерьер">
+              </a>
+            </div>
           </div>
-          <span class="btn  slider__btn">НАЗАД</span>
-          <span class="btn  slider__btn">ВПЕРЕД</span>
+          <button class="btn  slider__btn">НАЗАД</button>
+          <button class="btn  slider__btn">ВПЕРЕД</button>
         </div>
       </section>
       <section class="contacts">
@@ -109,23 +109,23 @@
       <section class="to-book">
         <h2 class="to-book__heading">ЗАПИСАТЬСЯ</h2>
         <p class="to-book__text">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
-        <form class="to-book__form">
+        <form class="to-book__form" action="https://echo.htmlacademy.ru" method="post">
           <div class="to-book__container">
             <label class="to-book__label">
               ДАТА
-              <input type="text" placeholder="08.10.2017">
+              <input type="text" placeholder="08.10.2017" name="data">
             </label>
             <label class="to-book__label">
               ВРЕМЯ
-              <input type="text" placeholder="10:00">
+              <input type="text" placeholder="10:00" name="time">
             </label>
             <label class="to-book__label">
               ВАШЕ ИМЯ
-              <input type="text" placeholder="Борода">
+              <input type="text" placeholder="Борода" name="client_name">
             </label>
             <label class="to-book__label">
               ТЕЛЕФОН
-              <input type="text" placeholder="+7 123 456-78-90">
+              <input type="text" placeholder="+7 123 456-78-90" name="client_phone">
             </label>
           </div>
           <button class="btn  to-book__submit">ОТПРАВИТЬ</button>
@@ -155,7 +155,7 @@
       </div>
       <p class="main-footer__column">
         РАЗРАБОТАНО:
-        <a class="btn-link  main-footer_btn">html academy</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="btn-link  main-footer_btn">html academy</a>
       </p>
     </footer>
 
