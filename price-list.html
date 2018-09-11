@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Прайс-лист</title>
+  <meta charset="UTF-8">
+  <title>Прайс-лист</title>
+  <link href="css/normalize.min.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <header class="main-header">
@@ -12,43 +14,43 @@
     </a>
     <ul class="main-nav">
       <li class="main-nav__item">
-        <a href="#" class="main-nav__link">ИНФОРМАЦИЯ</a>
+        <a href="#" class="main-nav__link">информация</a>
       </li>
       <li class="main-nav__item">
-        <a href="#" class="main-nav__link">НОВОСТИ</a>
+        <a href="#" class="main-nav__link">новости</a>
       </li>
       <li class="main-nav__item">
-        <a class="main-nav__link  main-nav__link--current">ПРАЙС-ЛИСТ</a>
+        <a class="main-nav__link  main-nav__link--current">прайс-лист</a>
       </li>
       <li class="main-nav__item">
-        <a href="#" class="main-nav__link">МАГАЗИН</a>
+        <a href="catalog.html" class="main-nav__link">магазин</a>
       </li>
       <li class="main-nav__item">
-        <a href="#" class="main-nav__link">КОНТАКТЫ</a>
+        <a href="#" class="main-nav__link">контакты</a>
       </li>
     </ul>
     <ul class="main-nav__list  main-nav__list--right">
       <li class="main-nav__item">
-        <a href="#" class="main-nav__link  main-nav__link--login">ВХОД</a>
+        <a href="#" class="main-nav__link  main-nav__link--login">вход</a>
       </li>
     </ul>
   </nav>
 </header>
 <main class="page">
-  <h1 class="page__heading">СРЕДСТВА ДЛЯ УХОДА</h1>
+  <h1 class="page__heading">Прайс-лист</h1>
   <ul class="page__crumbs">
     <li class="page__crumbs-item">
-      <a href="#" class="page__nav-link">ГЛАВНАЯ </a>
+      <a href="#" class="page__nav-link">главная </a>
     </li>
     <li class="page__crumbs-item">
-      <a class="page__nav-link">ПРАЙС-ЛИСТ</a>
+      <a class="page__nav-link  page__nav-link--current">прайс-лист</a>
     </li>
   </ul>
   <section class="price-list">
-    <h2 class="big-heading">ИСТИННО МУЖСКАЯ КЛАССИКА</h2>
+    <h2 class="big-heading">Истинно мужская классика</h2>
     <div class="price-list__column-holder">
       <div class="price-list__column">
-        <h2>МЫ ИСПОЛЬЗУЕМ ТОЛЬКО<BR>ЛУЧШИЕ СРЕДСТВА:</h2>
+        <h2>Мы используем только<br>лучшие средства:</h2>
         <ul class="list-custom-1">
           <li>Baxter of California</li>
           <li>Mr Natty</li>
@@ -57,25 +59,25 @@
         </ul>
       </div>
       <div class="price-list__column">
-        <h2>ЦЕНЫ НА УСЛУГИ<br>НАШИХ МАСТЕРОВ:</h2>
+        <h2>Цены на услуги<br>наших мастеров:</h2>
         <table class="table-custom-1">
           <tr>
-            <td>СТРИЖКА</td>
+            <td>стрижка</td>
             <td>1500 ₽</td>
           </tr>
           <tr>
-            <td>СТРИЖКА БОРОДЫ</td>
+            <td>стрижка бороды</td>
             <td>500 ₽</td>
           </tr>
           <tr>
-            <td>НАКРУТКА УСОВ</td>
+            <td>накрутка усов</td>
             <td>350 ₽</td>
           </tr>
         </table>
       </div>
     </div>
     <div class="price-list__column-holder">
-      <h2>НЕСКОЛЬКО СЛОВ О НАС:</h2>
+      <h2>Несколько слов о нас:</h2>
       <p>
         Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная
         и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.
@@ -87,6 +89,31 @@
     </div>
   </section>
 </main>
-
+<footer class="main-footer">
+  <p class="main-footer__column">
+    БАРБЕРШОП «БОРОДИНСКИЙ»
+    АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8
+    КАК НАС НАЙТИ?
+    ТЕЛЕФОН: +7 (495) 666-02-66
+  </p>
+  <div class="main-footer__column">
+    <b class="main-footer__text">ДАВАЙТЕ ДРУЖИТЬ!</b>
+    <ul class="follow-us  main-footer__column">
+      <li class="follow-us__item">
+        <a class="follow-us__link  follow-us__link--vk">Вконтакт</a>
+      </li>
+      <li class="follow-us__item">
+        <a class="follow-us__link  follow-us__link--fb">фейс бук</a>
+      </li>
+      <li class="follow-us__item">
+        <a class="follow-us__link  follow-us__link--inst">инстаграм</a>
+      </li>
+    </ul>
+  </div>
+  <p class="main-footer__column">
+    РАЗРАБОТАНО:
+    <a class="btn-link  main-footer__btn">html academy</a>
+  </p>
+</footer>
 </body>
 </html>

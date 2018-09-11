@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Магазин</title>
+  <meta charset="UTF-8">
+  <title>Магазин</title>
+  <link href="css/normalize.min.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <header class="main-header">
@@ -44,7 +46,7 @@
       <a href="#" class="page__nav-link">МАГАЗИН</a>
     </li>
     <li class="page__crumbs-item">
-      <a class="page__nav-link">СРЕДСТВА ДЛЯ УХОДА</a>
+      <a class="page__nav-link  page__nav-link--current">СРЕДСТВА ДЛЯ УХОДА</a>
     </li>
   </ul>
   <section class="catalogue">
@@ -83,96 +85,97 @@
         <input id="category-3" type="radio" class="visually-hidden" name="category" value="Аксессуары">
         <label for="category-3" class="catalogue__radio-button">Аксессуары</label>
       </fieldset>
+      <button type="submit" class="catalogue__filters-btn">Показать</button>
     </form>
     <div class="catalogue__gallery">
       <ul class="catalogue__list">
         <li class="catalogue__item">
           <div class="ware">
-            <a href="catalog-item.html">
+            <a href="catalog-item.html" class="ware__link">
               <img src="img/image-lot-1.jpg" class="ware__img" width="220" height="165" alt="Изображение товара">
               <h3>
                 <b class="ware__text">Набор для путешествий</b>
-                <b class="ware__text">«Baxter of California»</b>
+                <b class="ware__text  ware__text--upper">«Baxter of California»</b>
               </h3>
             </a>
             <p class="ware__sell">
               <span class="ware__price">2 900 ₽</span>
-              <a href="#" class="btn-link  ware__btn">КУПИТЬ</a>
+              <a href="#" class="ware__btn">КУПИТЬ</a>
             </p>
           </div>
         </li>
         <li class="catalogue__item">
           <div class="ware">
-            <a href="#">
+            <a href="#" class="ware__link">
               <img src="img/image-lot-2.jpg" class="ware__img" width="220" height="165" alt="Изображение товара">
               <h3>
                 <b class="ware__text">Увлажняющий кондиционер</b>
-                <b class="ware__text">«Baxter of California»</b>
+                <b class="ware__text  ware__text--upper">«Baxter of California»</b>
               </h3>
             </a>
             <p class="ware__sell">
               <span class="ware__price">750 ₽</span>
-              <a href="#" class="btn-link  ware__btn">КУПИТЬ</a>
+              <a href="#" class="ware__btn">КУПИТЬ</a>
             </p>
           </div>
         </li>
         <li class="catalogue__item">
           <div class="ware">
-            <a href="#">
+            <a href="#" class="ware__link">
               <img src="img/image-lot-3.jpg" class="ware__img" width="220" height="165" alt="Изображение товара">
               <h3>
                 <b class="ware__text">Гель для волос</b>
-                <b class="ware__text">«SUAVECITO»</b>
+                <b class="ware__text  ware__text--upper">«SUAVECITO»</b>
               </h3>
             </a>
             <p class="ware__sell">
               <span class="ware__price">290 ₽</span>
-              <a href="#" class="btn-link  ware__btn">КУПИТЬ</a>
+              <a href="#" class="ware__btn">КУПИТЬ</a>
             </p>
           </div>
         </li>
         <li class="catalogue__item">
           <div class="ware">
-            <a href="#">
+            <a href="#" class="ware__link">
               <img src="img/image-lot-4.jpg" class="ware__img" width="220" height="165" alt="Изображение товара">
               <h3>
                 <b class="ware__text">Глина для укладки волос</b>
-                <b class="ware__text">«American crew»</b>
+                <b class="ware__text  ware__text--upper">«American Crew»</b>
               </h3>
             </a>
             <p class="ware__sell">
               <span class="ware__price">500 ₽</span>
-              <a href="#" class="btn-link  ware__btn">КУПИТЬ</a>
+              <a href="#" class="ware__btn">КУПИТЬ</a>
             </p>
           </div>
         </li>
         <li class="catalogue__item">
           <div class="ware">
-            <a href="#">
+            <a href="#" class="ware__link">
               <img src="img/image-lot-5.jpg" class="ware__img" width="220" height="165" alt="Изображение товара">
               <h3>
                 <b class="ware__text">Гель для волос</b>
-                <b class="ware__text">«AMERICAN CREW»</b>
+                <b class="ware__text  ware__text--upper">«American Crew»</b>
               </h3>
             </a>
             <p class="ware__sell">
               <span class="ware__price">300 ₽</span>
-              <a href="#" class="btn-link  ware__btn">КУПИТЬ</a>
+              <a href="#" class="ware__btn">КУПИТЬ</a>
             </p>
           </div>
         </li>
         <li class="catalogue__item">
           <div class="ware">
-            <a href="#">
+            <a href="#" class="ware__link">
               <img src="img/image-lot-6.jpg" class="ware__img" width="220" height="165" alt="Изображение товара">
               <h3>
                 <b class="ware__text">Набор для бритья</b>
-                <b class="ware__text">«Baxter of California»</b>
+                <b class="ware__text  ware__text--upper">«Baxter of California»</b>
               </h3>
             </a>
             <p class="ware__sell">
               <span class="ware__price">3 900 ₽</span>
-              <a href="#" class="btn-link  ware__btn">КУПИТЬ</a>
+              <a href="#" class="ware__btn">КУПИТЬ</a>
             </p>
           </div>
         </li>
@@ -217,7 +220,7 @@
   </div>
   <p class="main-footer__column">
     РАЗРАБОТАНО:
-    <a class="btn-link  main-footer_btn">html academy</a>
+    <a class="btn-link  main-footer__btn">html academy</a>
   </p>
 </footer>
 </body>
