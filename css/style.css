@@ -37,6 +37,10 @@ body {
   background: #1b1b1b url("../img/background.jpg");
 }
 
+.main-nav__list {
+  list-style: none;
+}
+
 .main-nav__link {
   font-family: "PT Sans Narrow", Arial, sans-serif;
   font-size: 16px;
@@ -47,6 +51,10 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   background-color: #000000;
+}
+
+.main-nav__link--current {
+  cursor: default;
 }
 
 .advantage__heading {
@@ -205,6 +213,10 @@ body {
   background-color: #f8f5f2;
 }
 
+.page__crumbs {
+  list-style: none;
+}
+
 .page__nav-link {
   font-family: "PT Sans Narrow", Arial, sans-serif;
   font-size: 14px;
@@ -217,9 +229,21 @@ body {
   background-color: #f8f5f2;
 }
 
+.page__nav-link:hover {
+  text-decoration: underline;
+}
+
 .page__nav-link--current {
   color: #aba9a7;
   cursor: default;
+}
+
+.page__nav-link--current:hover {
+  text-decoration: none;
+}
+
+.catalogue__filters-group {
+  border: none;
 }
 
 .catalogue__filters-group-name {
@@ -257,6 +281,18 @@ body {
 
 .catalogue__filters-btn:hover {
   background-color: #663d15;
+}
+
+.catalogue__list {
+  list-style: none;
+}
+
+.catalogue__item {
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+.catalogue__item:hover {
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.35);
 }
 
 .ware__link {
@@ -354,6 +390,10 @@ body {
   color: #000000;
   background-color: transparent;
   text-transform: uppercase;
+}
+
+.lot__list {
+  list-style: none;
 }
 
 .lot__item {
