@@ -12,7 +12,7 @@
         <img src="img/index-logo.png" class="main-header__logo" width="371" height="155" alt="Барбершоп">
       </a>
       <nav class="main-nav">
-        <ul class="main-nav__list">
+        <ul class="main-nav__list  main-nav__list--left">
           <li class="main-nav__item">
             <a href="#" class="main-nav__link">информация</a>
           </li>
@@ -36,7 +36,7 @@
         </ul>
       </nav>
     </header>
-    <main class="container">
+    <main class="main  wrapper">
       <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
       <section class="advantage">
         <h2 class="visually-hidden">Преимущества барбершопа "Бородинский"</h2>
@@ -50,119 +50,123 @@
           <li class="advantage__item">
             <h3 class="advantage__heading">Круто</h3>
             <p class="advantage__text">Забудьте, как вы стриглись раньше.
-              мы сделаем из вас звезду футбола или кино!
-              во всяком случае внешне.
+              мы сделаем&nbsp;из вас звезду футбола или кино!
+              во&nbsp;всяком случае внешне.
             </p>
           </li>
           <li class="advantage__item">
             <h3 class="advantage__heading">Дорого</h3>
-            <p class="advantage__text">Наши мастера — профессионалы своего дела и не могут стоить дешево.
-              к тому же, разве цена не дает определеный статус?
+            <p class="advantage__text">Наши мастера — профессионалы своего дела и не&nbsp;могут стоить дешево.
+              к тому же, разве цена не&nbsp;дает определеный статус?
             </p>
           </li>
         </ul>
       </section>
-      <section class="news">
-        <h2 class="news__heading">новости</h2>
-        <ul class="news__list">
-          <li class="news__item">
-            <p>
-              Нам наконец завезли ягермайстер! теперь вы можете пропустить стаканчик во время стрижки
-            </p>
-            <time datetime="01-11">11 января</time>
-          </li>
-          <li class="news__item">
-            <p>
-              В нашей команде пополнение, Борис «бритва» Стригунец, обладатель множества титулов и наград
-              пополнил наши стройные ряды
-            </p>
-            <time datetime="01-18">18 января</time>
-          </li>
-        </ul>
-        <a class="news__btn">Все новости</a>
-      </section>
-      <section class="photos">
-        <h2 class="photos__heading">Фотогалерея</h2>
-        <div class="slider">
-          <div class="slider__viewport">
-            <div class="slider__slid-holder">
-              <a href="#" class="slider__frame">
-                <img src="img/photo-1.jpg" class="slider__slid" width="286" height="164" alt="Интерьер">
-              </a>
+      <div class="container">
+        <section class="news">
+          <h2 class="news__heading">новости</h2>
+          <ul class="news__list">
+            <li class="news__item">
+              <p>
+                Нам наконец завезли ягермайстер! теперь вы можете пропустить стаканчик во время стрижки
+              </p>
+              <time datetime="01-11">11 января</time>
+            </li>
+            <li class="news__item">
+              <p>
+                В нашей команде пополнение, Борис «бритва» Стригунец, обладатель множества титулов и наград
+                пополнил наши стройные ряды
+              </p>
+              <time datetime="01-18">18 января</time>
+            </li>
+          </ul>
+          <a href="#" class="news__btn">Все новости</a>
+        </section>
+        <section class="photos">
+          <h2 class="photos__heading">Фотогалерея</h2>
+          <div class="slider">
+            <div class="slider__viewport">
+              <div class="slider__slid-holder">
+                <a href="#" class="slider__frame">
+                  <img src="img/photo-1.jpg" class="slider__slid" width="286" height="164" alt="Интерьер">
+                </a>
+              </div>
             </div>
+            <button class="slider__btn">назад</button>
+            <button class="slider__btn">вперед</button>
           </div>
-          <button class="slider__btn">назад</button>
-          <button class="slider__btn">вперед</button>
-        </div>
-      </section>
-      <section class="contacts">
-        <h2 class="contacts__heading">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
-        <p class="contacts__text">
-          Барбершоп «Бородинский»<br>
-          адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-          телефон: +7 (495) 666-02-66
-        </p>
-        <p class="contacts__text">
-          Время работы:<br>
-          пн—пт: с 10:00 до 22:00<br>
-          сб—вс: с 10:00 до 19:00
-        </p>
-        <a href="#" class="contacts__btn">Как проехать</a>
-        <a href="#" class="contacts__btn">Обратная связь</a>
-      </section>
-      <section class="to-book">
-        <h2 class="to-book__heading">ЗАПИСАТЬСЯ</h2>
-        <p class="to-book__text">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <form class="to-book__form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="to-book__container">
-            <label class="to-book__label">
-              ДАТА
-              <input type="text" placeholder="08.10.2017" name="data">
-            </label>
-            <label class="to-book__label">
-              ВРЕМЯ
-              <input type="text" placeholder="10:00" name="time">
-            </label>
-            <label class="to-book__label">
-              ВАШЕ ИМЯ
-              <input type="text" placeholder="Борода" name="client_name">
-            </label>
-            <label class="to-book__label">
-              ТЕЛЕФОН
-              <input type="text" placeholder="+7 123 456-78-90" name="client_phone">
-            </label>
-          </div>
-          <button class="to-book__btn">ОТПРАВИТЬ</button>
-        </form>
-      </section>
+        </section>
+      </div>
+      <div class="container  index__last-container">
+        <section class="contacts">
+          <h2 class="contacts__heading">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+          <p class="contacts__text">
+            Барбершоп «Бородинский»<br>
+            адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+            телефон: +7 (495) 666-02-66
+          </p>
+          <p class="contacts__text">
+            Время работы:<br>
+            пн—пт: с 10:00 до 22:00<br>
+            сб—вс: с 10:00 до 19:00
+          </p>
+          <a href="#" class="contacts__btn">Как проехать</a>
+          <a href="#" class="contacts__btn">Обратная связь</a>
+        </section>
+        <section class="to-book">
+          <h2 class="to-book__heading">ЗАПИСАТЬСЯ</h2>
+          <p class="to-book__text">Укажите желаемую дату и время и мы свяжемся с&nbsp;вами для подтверждения брони</p>
+          <form class="to-book__form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="to-book__container">
+              <label class="to-book__label">
+                ДАТА
+                <input type="text" placeholder="08.10.2017" name="data">
+              </label>
+              <label class="to-book__label">
+                ВРЕМЯ
+                <input type="text" placeholder="10:00" name="time">
+              </label>
+              <label class="to-book__label">
+                ВАШЕ ИМЯ
+                <input type="text" placeholder="Борода" name="client_name">
+              </label>
+              <label class="to-book__label">
+                ТЕЛЕФОН
+                <input type="text" placeholder="+7 123 456-78-90" name="client_phone">
+              </label>
+            </div>
+            <button class="to-book__btn">ОТПРАВИТЬ</button>
+          </form>
+        </section>
+      </div>
     </main>
     <footer class="main-footer">
-      <p class="main-footer__column">
-        Барбершоп «Бородинский»<br>
-        адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-        <span class="main-footer__text-underline">Как нас найти?</span><br>
-        Телефон: +7 (495) 666-02-66
-      </p>
-      <div class="main-footer__column">
-        <b class="main-footer__text">Давайте дружить!</b>
-        <ul class="follow-us  main-footer__column">
-          <li class="follow-us__item">
-            <a class="follow-us__link  follow-us__link--vk">Вконтакт</a>
-          </li>
-          <li class="follow-us__item">
-            <a class="follow-us__link  follow-us__link--fb">фейс бук</a>
-          </li>
-          <li class="follow-us__item">
-            <a class="follow-us__link  follow-us__link--inst">инстаграм</a>
-          </li>
-        </ul>
+      <div class="main-footer__container">
+        <div class="main-footer__column  main-footer__column--left">
+          Барбершоп «Бородинский»<br>
+          адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          <span class="main-footer__text-underline">Как нас найти?</span><br>
+          Телефон: +7 (495) 666-02-66
+        </div>
+        <div class="main-footer__column  main-footer__column--center">
+          <b class="main-footer__text">Давайте дружить!</b>
+          <ul class="follow-us">
+            <li class="follow-us__item">
+              <a class="follow-us__link  follow-us__link--vk">Вконтакт</a>
+            </li>
+            <li class="follow-us__item">
+              <a class="follow-us__link  follow-us__link--fb">фейс бук</a>
+            </li>
+            <li class="follow-us__item">
+              <a class="follow-us__link  follow-us__link--inst">инстаграм</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__column  main-footer__column--right">
+          Разработано:
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="main-footer__btn">html&nbsp;academy</a>
+        </div>
       </div>
-      <p class="main-footer__column">
-        Разработано:
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="main-footer__btn">html academy</a>
-      </p>
     </footer>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
   </body>
 </html>

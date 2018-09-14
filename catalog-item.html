@@ -36,17 +36,17 @@
     </ul>
   </nav>
 </header>
-<main class="page">
+<main class="page wrapper">
   <h1 class="page__heading">Набор для путешествий «Baxter of California»</h1>
   <ul class="page__crumbs">
     <li class="page__crumbs-item">
-      <a href="#" class="page__nav-link">Главная </a>
+      <a href="index.html" class="page__nav-link">Главная </a>
     </li>
     <li class="page__crumbs-item">
       <a href="#" class="page__nav-link">Магазин</a>
     </li>
     <li class="page__crumbs-item">
-      <a href="#" class="page__nav-link">Средства для ухода</a>
+      <a href="catalog.html" class="page__nav-link">Средства для ухода</a>
     </li>
     <li class="page__crumbs-item">
       <a class="page__nav-link  page__nav-link--current">Набор для путешествий «Baxter of California»</a>
@@ -62,10 +62,10 @@
       </div>
     </div>
     <div class="lot__description">
-      <p class="lot__text">
+      <div class="lot__text  lot__text--flex">
         <span class="lot__left-text-part">есть в наличии</span>
         <span class="lot__right-text-part">Артикул: dexter-ae</span>
-      </p>
+      </div>
       <p class="lot__text">
         Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что
         нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем,
@@ -87,30 +87,32 @@
   </section>
 </main>
 <footer class="main-footer">
-  <p class="main-footer__column">
-    БАРБЕРШОП «БОРОДИНСКИЙ»
-    АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8
-    КАК НАС НАЙТИ?
-    ТЕЛЕФОН: +7 (495) 666-02-66
-  </p>
-  <div class="main-footer__column">
-    <b class="main-footer__text">ДАВАЙТЕ ДРУЖИТЬ!</b>
-    <ul class="follow-us  main-footer__column">
-      <li class="follow-us__item">
-        <a class="follow-us__link  follow-us__link--vk">Вконтакт</a>
-      </li>
-      <li class="follow-us__item">
-        <a class="follow-us__link  follow-us__link--fb">фейс бук</a>
-      </li>
-      <li class="follow-us__item">
-        <a class="follow-us__link  follow-us__link--inst">инстаграм</a>
-      </li>
-    </ul>
+  <div class="main-footer__container">
+    <div class="main-footer__column  main-footer__column--left">
+      Барбершоп «Бородинский»<br>
+      адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+      <span class="main-footer__text-underline">Как нас найти?</span><br>
+      Телефон: +7 (495) 666-02-66
+    </div>
+    <div class="main-footer__column  main-footer__column--center">
+      <b class="main-footer__text">Давайте дружить!</b>
+      <ul class="follow-us">
+        <li class="follow-us__item">
+          <a class="follow-us__link  follow-us__link--vk">Вконтакт</a>
+        </li>
+        <li class="follow-us__item">
+          <a class="follow-us__link  follow-us__link--fb">фейс бук</a>
+        </li>
+        <li class="follow-us__item">
+          <a class="follow-us__link  follow-us__link--inst">инстаграм</a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-footer__column  main-footer__column--right">
+      Разработано:
+      <a href="https://htmlacademy.ru/intensive/htmlcss" class="main-footer__btn">html&nbsp;academy</a>
+    </div>
   </div>
-  <p class="main-footer__column">
-    РАЗРАБОТАНО:
-    <a class="btn-link  main-footer__btn">html academy</a>
-  </p>
 </footer>
 
 </body>
